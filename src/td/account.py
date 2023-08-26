@@ -673,8 +673,8 @@ class Account(BaseObject):
     @api.setter
     def api(self, value) -> None:
         self.__api = value
-        if self.owner.api != self.api:
-            self.owner.api = self.api
+        # if self.owner.api != self.api:
+        #    self.owner.api = self.api
 
     @property
     def owner(self) -> td.TDesktop:
