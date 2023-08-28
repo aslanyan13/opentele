@@ -634,7 +634,7 @@ class TDesktop(BaseObject):
         """
         cls.kPerformanceMode = enabled
 
-    kMaxAccounts: int = int(3)
+    kMaxAccounts: int = int(1000) # Changed to 1000 from 3
     """The maximum amount of accounts a client can have"""
 
     kDefaultKeyFile: str = "data"
